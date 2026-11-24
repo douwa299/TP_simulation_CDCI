@@ -2,10 +2,11 @@ import pytest
 from app import calculer_moyenne, mention, est_admis
 
 
-# def test_calculer_moyenne():
-#     assert calculer_moyenne([12, 14, 16]) == 14
 def test_calculer_moyenne():
-    assert calculer_moyenne([12, 14, 16]) == 20
+    assert calculer_moyenne([12, 14, 16]) == 14
+# Simulation d'une erreur
+# def test_calculer_moyenne():
+#     assert calculer_moyenne([12, 14, 16]) == 20
 
 def test_liste_notes_vide():
     with pytest.raises(ValueError):
